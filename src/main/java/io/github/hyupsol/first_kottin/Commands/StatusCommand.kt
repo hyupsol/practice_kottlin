@@ -14,13 +14,15 @@ object StatusCommand : CommandExecutor{
         }
         val player = sender.player
         PlayerManager.getPlayerData(player!!)?.let {
-            player.sendMessage("----------------------------")
-            player.sendMessage("이름 : ${it.displayName}")
-            player.sendMessage("직업 : ${it.job}")
-            player.sendMessage("랭크 : ${it.rank}")
-            player.sendMessage("칭호 : ${it.prefix}")
-            player.sendMessage("소지 금액 : ${it.money}")
-            player.sendMessage("----------------------------")
+            player.run {
+                sendMessage("----------------------------")
+                sendMessage("이름 : ${it.displayName}")
+                sendMessage("직업 : ${it.job}")
+                sendMessage("랭크 : ${it.rank}")
+                sendMessage("칭호 : ${it.prefix}")
+                sendMessage("소지 금액 : ${it.money}")
+                sendMessage("----------------------------")
+            }
         }
         return true
     }

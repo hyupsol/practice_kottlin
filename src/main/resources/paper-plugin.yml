@@ -4,4 +4,3 @@ main: io.github.hyupsol.first_kottin.Main
 api-version: '1.20'
 commands:
   status:
-    description: display player status

@@ -1,6 +1,6 @@
 package io.github.hyupsol.first_kottin
 
-import io.github.hyupsol.first_kottin.player.management.PlayerManager
+
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
